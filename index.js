@@ -22,3 +22,12 @@ for (f of friends) {
 console.log(
   friends.filter((f) => f.drinks.includes("chocolat")).map((f) => f.name)
 );
+
+const a = ["Alice", "Bob", "Charlie"];
+const b = a.reduce((obj, k, i) => {
+  obj[i] = k;
+  return obj;
+}, {});
+console.log(b);
+
+//dans la méthode reduce obj et l'accumulateur k la valeur courant et i l'index
